@@ -1,0 +1,23 @@
+{
+    "name": "frocks/ferenc-rocks",
+    "authors": [
+        {
+            "name": "Ferenc Faluvegi",
+            "email": "frantzdae@live.com"
+        }
+    ],
+    "autoload": {
+      "psr-4": {
+        "App\\": "src"
+      }
+    },
+    "require": {
+        "slim/slim": "4.*",
+        "slim/psr7": "^1.7",
+        "slim/php-view": "^3.4",
+        "php-di/slim-bridge": "^3.4",
+        "vlucas/phpdotenv": "^5.6",
+        "phpmailer/phpmailer": "^6.10",
+        "gregwar/captcha": "^1.3"
+    }
+}
