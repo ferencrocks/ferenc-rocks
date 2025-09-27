@@ -21,6 +21,10 @@ $title = $title ?? 'Contact';
 </p>
 
 
+<h2 class="mt-10">Via e-mail</h2>
+<p>
+    You can contact me by e-mail. I check my inbox regularly.
+</p>
 <?php if (!empty($success)): ?>
     <div class="alert alert-success"><?= $success ?></div>
 <?php endif; ?>
@@ -34,11 +38,6 @@ $title = $title ?? 'Contact';
         </ul>
     </div>
 <?php endif; ?>
-
-<h2 class="mt-10">Via e-mail</h2>
-<p>
-    You can contact me by e-mail. I check my inbox regularly.
-</p>
 <form action="/contact" method="post" class="form-container">
     <div class="form-group">
         <label for="name">Name</label>

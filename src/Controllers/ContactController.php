@@ -122,15 +122,15 @@ class ContactController
             $bodyLines = [
                 'You received a new contact message:',
                 'Name: ' . $name,
-                'Email: ' . $email,
+                'Email: ' . $email . '<br>',
                 'Message:',
                 $message,
             ];
-            $mail->Body = implode("\n\n", $bodyLines);
+            $mail->Body = implode("<br>", $bodyLines);
             $mail->AltBody = $mail->Body;
 
             // Avoid HTML content to keep it simple and safe
-            $mail->isHTML(false);
+            $mail->isHTML(true);
 
             $mail->send();
 

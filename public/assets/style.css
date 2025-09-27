@@ -148,13 +148,20 @@ button {
 }
 
 /* ---- Alerts ---- */
+.alert {
+    padding: 0.75rem 1rem;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+}
 .alert.alert-error {
     background-color: #ffe5e5;
     border: 1px solid #f5a3a3;
     color: #8b0000;
-    padding: 0.75rem 1rem;
-    border-radius: 6px;
-    margin-bottom: 1rem;
+}
+.alert.alert-success {
+    background-color: #e5ffe5;
+    border: 1px solid #a3f5a3;
+    color: #008b00;
 }
 
 .alert.alert-error ul {
